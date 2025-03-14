@@ -1,0 +1,83 @@
+.VPHome {
+  // 定义遮罩样式
+  background: radial-gradient(ellipse,
+      rgba(var(--bg-gradient-home), 1) 0%,
+      rgba(var(--bg-gradient-home), 0) 150%);
+
+  // 自定义首页背景图
+  &::before {
+    // 图片来源：https://zhuanlan.zhihu.com/p/54060187
+    background-image: url(../assets/bg.webp);
+    background-size: cover;
+  }
+}
+
+// sidebar
+@media (min-width: 1440px) {
+  aside.VPSidebar {
+    padding-left: max(32px, calc((100% - (var(--vp-layout-max-width) - 64px)) / 2)) !important;
+    padding-right: 10px !important;
+  }
+}
+
+//.VPDoc .content main {
+//  img {
+//    max-height: initial; //關閉限制圖片大小高度
+//    margin: 0 auto; //圖片位置 預設居中
+//  }
+//
+//  .vp-doc a {
+//    word-break: break-all;
+//  }
+//}
+
+main .vp-doc a:hover {
+  text-decoration: none;
+}
+
+.vp-doc h1 {
+  margin-top: 0em !important;
+}
+.vp-doc h1,
+.vp-doc h2,
+.vp-doc h3,
+.vp-doc h4,
+.vp-doc h5,
+.vp-doc h6 {
+  margin-top: 1.25em;
+  margin-bottom: 10px;
+}
+
+.vp-doc p {
+  margin-bottom: 10px;
+}
+
+.note p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+body {
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+.vp-doc ol, ul {
+//  padding-left: 2em;
+  list-style-position: outside;
+}
+
+.vp-doc ul ul {
+  list-style-type: circle !important;
+}
+
+.vp-doc ul ul ul {
+  list-style-type: square !important;
+}
+
+// .vp-doc blockquote {
+//   border-radius: 5px;
+//   padding: 10px 16px;
+//   background-color: var(--vp-badge-danger-bg);
+//   position: relative;
+//   border-left: 4px solid #6b6b6b;
+// }

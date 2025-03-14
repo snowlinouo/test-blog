@@ -1,0 +1,132 @@
+
+html.dark {
+    color-scheme: dark;
+  }
+  
+  html.light {
+    color-scheme: light;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  .vp-doc figure {
+    text-align: center;
+  }
+  
+  .vp-doc figure figcaption {
+    font-weight: bold;
+    line-height: 1.5;
+    padding: 0.3rem 0;
+    color: var(--vp-fig-light-text);
+  }
+  
+  html.dark .vp-doc figure figcaption {
+    color: var(--vp-fig-text);
+  }
+  
+  .VPMenuLink .link {
+    line-height: 28px !important;
+  }
+  
+  .VPSidebarGroup .link {
+    padding: 3px 0 !important;
+  }
+  
+  .VPLocalNav {
+    padding-top: 0 !important;
+    margin-top: var(--vp-layout-top-height);
+  }
+  
+  .VPNav {
+    transition:
+      background-color 0.5s,
+      top 0.35s ease-out !important;
+  }
+  
+  textarea {
+    font-family: var(--vp-font-family-base);
+  }
+  
+  #app a:focus-visible,
+  #app button:focus-visible,
+  #app input[type="checkbox"]:focus-visible {
+    --at-apply: outline-1 outline-primary ring-2 ring-primary;
+  }
+  
+  .VPSidebar::-webkit-scrollbar {
+    background: transparent;
+    height: 8px;
+    width: 8px;
+    margin-right: 8px;
+  }
+  
+  .VPSidebar::-webkit-scrollbar-corner {
+    width: 4px;
+  }
+  
+  .VPSidebar::-webkit-scrollbar-thumb {
+    background-clip: content-box;
+    background-color: var(--vp-button-alt-bg);
+    border: 2px solid transparent;
+    border-radius: 4px;
+  }
+  
+  .VPSidebar::-webkit-scrollbar-track {
+    background-color: var(--vp-c-bg);
+  }
+  
+  #app > div > div.VPLocalNav > div > div > div.outline {
+    outline-style: none !important;
+  }
+  
+  .vp-doc .color-swatch {
+    display: inline-block;
+    width: 0.85em;
+    height: 0.85em;
+    min-width: 12px;
+    min-height: 12px;
+    font-size: inherit;
+    border: 0;
+    border-radius: 2px;
+    margin: 0 3px 0 6px;
+    cursor: pointer;
+  }
+  
+  .load-error::after {
+    content: "圖片被吃掉了！" !important;
+    text-align: center;
+    line-height: 10;
+    background-color: var(--vp-c-bg-alt) !important;
+    animation: none !important;
+  }
+  
+  .medium-zoom-overlay {
+    z-index: 999999999999;
+  }
+  
+  .medium-zoom-image {
+    z-index: 999999999999;
+  }
+  
+  .prev-next {
+    margin-top: 1em;
+  }
+  
+  .edit-info {
+    display: none !important;
+  }
+  
+  .spoiler {
+    background-color: currentColor;
+    border-radius: 0.2em;
+    transition: background ease 0.5s;
+    cursor: help;
+    padding: 0 0.1em;
+  }
+  
+  .spoiler:hover,
+  .spoiler:focus {
+    background-color: transparent;
+  }
