@@ -5,24 +5,15 @@
     "sass-embedded": "^1.85.1",
     "vitepress": "^1.6.3"
   },
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "@apollo/protobufjs",
-      "esbuild",
-      "vue-demi"
-    ]
-  },
-  "dependencies": {
-    "@sugarat/theme": "^0.5.4",
-    "@vue/cli": "^5.0.8",
-    "markdown-it-task-checkbox": "^1.0.6",
-    "unocss": "66.1.0-beta.5",
-    "vitepress-markdown-timeline": "^1.2.2",
-    "vue": "^3.5.13"
-  },
   "scripts": {
     "dev": "vitepress dev docs",
     "build": "vitepress build docs",
     "preview": "vitepress preview docs"
+  },
+  "dependencies": {
+    "@vue/cli": "^5.0.8",
+    "unocss": "66.1.0-beta.5",
+    "vitepress-markdown-timeline": "^1.2.2",
+    "vue": "^3.5.13"
   }
 }

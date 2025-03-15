@@ -1,8 +1,8 @@
 import { defineConfig } from 'vitepress'
 import Unocss from 'unocss/vite'
+import timeline from "vitepress-markdown-timeline"
 
-import { nav } from './configs'
-import { sidebar } from './configs'
+import { nav, sidebar, markdown } from './configs'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -120,15 +120,7 @@ export default defineConfig({
         }
       ]
     },
-    markdown: {
-      container: {
-        tipLabel: '提示',
-        warningLabel: '警告',
-        dangerLabel: '危險',
-        infoLabel: '資訊',
-        detailsLabel: '詳細資訊'
-      }
-    }
+    markdown,
     //locales: {
     //  root: {
     //    lang: 'zh_tw',

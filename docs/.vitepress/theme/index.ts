@@ -14,6 +14,9 @@ import './style/index.css'
 import './style/animation.css'
 import './style/ui.css'
 
+// 引入时间线样式
+import "vitepress-markdown-timeline/dist/theme/index.css"
+
 export default {
   extends: DefaultTheme,
 
