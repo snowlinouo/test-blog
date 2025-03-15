@@ -26,10 +26,6 @@ html.dark {
     color: var(--vp-fig-text);
   }
   
-  .VPMenuLink .link {
-    line-height: 28px !important;
-  }
-  
   .VPSidebarGroup .link {
     padding: 3px 0 !important;
   }
