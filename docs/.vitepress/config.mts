@@ -1,6 +1,5 @@
 import { defineConfig } from 'vitepress'
 import Unocss from 'unocss/vite'
-import timeline from "vitepress-markdown-timeline"
 
 import { nav, sidebar, markdown } from './configs'
 
