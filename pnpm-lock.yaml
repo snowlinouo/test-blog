@@ -17,6 +17,12 @@ importers:
       element-plus:
         specifier: ^2.9.6
         version: 2.9.6(vue@3.5.13(typescript@4.5.5))
+      markdown-it:
+        specifier: ^14.1.0
+        version: 14.1.0
+      markdown-it-task-checkbox:
+        specifier: ^1.0.6
+        version: 1.0.6
       pagefind:
         specifier: ^1.3.0
         version: 1.3.0
@@ -29,6 +35,12 @@ importers:
       vitepress-markdown-timeline:
         specifier: ^1.2.2
         version: 1.2.2
+      vitepress-plugin-group-icons:
+        specifier: ^1.3.7
+        version: 1.3.7
+      vitepress-plugin-tabs:
+        specifier: ^0.6.0
+        version: 0.6.0(vitepress@1.6.3(@algolia/client-search@5.21.0)(@types/node@22.13.10)(async-validator@4.2.5)(postcss@8.5.3)(sass-embedded@1.85.1)(sass@1.85.1)(search-insights@2.17.3)(typescript@4.5.5))(vue@3.5.13(typescript@4.5.5))
       vue:
         specifier: ^3.5.13
         version: 3.5.13(typescript@4.5.5)
@@ -992,8 +1004,14 @@ packages:
   '@hapi/topo@5.1.0':
     resolution: {integrity: sha512-foQZKJig7Ob0BMAYBfcJk8d77QtOe7Wo4ox7ff1lQYoNNAb6jwcY1ncdoy2e9wQZzvNy7ODZCYJkK8kzmcAnAg==}
 
+  '@iconify-json/logos@1.2.4':
+    resolution: {integrity: sha512-XC4If5D/hbaZvUkTV8iaZuGlQCyG6CNOlaAaJaGa13V5QMYwYjgtKk3vPP8wz3wtTVNVEVk3LRx1fOJz+YnSMw==}
+
   '@iconify-json/simple-icons@1.2.28':
     resolution: {integrity: sha512-KoCuXgJ2AysGjzOAMUtNPrXeOvvC3zRR+REbYhei2mx5LGTSSrrlVJdaSBv4f8LH9hgfhG7E4Us3hH3XwreP+A==}
+
+  '@iconify-json/vscode-icons@1.2.16':
+    resolution: {integrity: sha512-hstc2yVq2UJ6v6FrgjftzXRvphGZBsKxvSeXoFLP1Hgx89TPZKrGE5SV6vqsoeIlLYaQ7OZbXmAoVGroTfGmVQ==}
 
   '@iconify/types@2.0.0':
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
@@ -2952,6 +2970,9 @@ packages:
   lines-and-columns@1.2.4:
     resolution: {integrity: sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==}
 
+  linkify-it@5.0.0:
+    resolution: {integrity: sha512-5aHCbzQRADcdP+ATqnDuhhJ/MRIqDkZX5pyjFHRRysS8vZ5AbqGEoFIb6pYHPZ+L/OC2Lc+xT8uHVVR5CAK/wQ==}
+
   local-pkg@1.1.1:
     resolution: {integrity: sha512-WunYko2W1NcdfAFpuLUoucsgULmgDBRkdxHxWQ7mK0cQqwPiy8E1enjuRBrhLtZkB5iScJ1XIPdhVEFK8aOLSg==}
     engines: {node: '>=14'}
@@ -3045,6 +3066,13 @@ packages:
   mark.js@8.11.1:
     resolution: {integrity: sha512-1I+1qpDt4idfgLQG+BNWmrqku+7/2bi5nLf4YwF8y8zXvmfiTBY3PV3ZibfrjBueCByROpuBjLLFCajqkgYoLQ==}
 
+  markdown-it-task-checkbox@1.0.6:
+    resolution: {integrity: sha512-7pxkHuvqTOu3iwVGmDPeYjQg+AIS9VQxzyLP9JCg9lBjgPAJXGEkChK6A2iFuj3tS0GV3HG2u5AMNhcQqwxpJw==}
+
+  markdown-it@14.1.0:
+    resolution: {integrity: sha512-a54IwgWPaeBCAAsv13YgmALOF1elABB08FxO9i+r4VFk5Vl4pKokRPeX8u5TCgSsPi6ec1otfLjdOpVcgbpshg==}
+    hasBin: true
+
   math-intrinsics@1.1.0:
     resolution: {integrity: sha512-/IXtbwEk5HTPyEwyKX6hGkYXxM9nbj64B+ilVJnC/R6B0pH5G4V3b0pVbL7DBj4tkhBAppbQUlf6F6Xl9LHu1g==}
     engines: {node: '>= 0.4'}
@@ -3054,6 +3082,9 @@ packages:
 
   mdn-data@2.12.2:
     resolution: {integrity: sha512-IEn+pegP1aManZuckezWCO+XZQDplx1366JoVhTpMpBB1sPey/SbveZQUosKiKiGYjg1wH4pMlNgXbCiYgihQA==}
+
+  mdurl@2.0.0:
+    resolution: {integrity: sha512-Lf+9+2r+Tdp5wXDXC4PcIBjTDtq4UKjCPMQhKIuzpJNW0b96kVqSwW0bT7FhRSfmAiFYgP+SCRvdrDozfh0U5w==}
 
   media-typer@0.3.0:
     resolution: {integrity: sha512-dq+qelQ9akHpcOl/gUVRTxVIOkAJ1wR3QAvb4RsVjS8oVoFjDGTc679wJYmUmknUF5HwMLOgb5O+a3KxfWapPQ==}
@@ -3503,6 +3534,10 @@ packages:
 
   pump@3.0.2:
     resolution: {integrity: sha512-tUPXtzlGM8FE3P0ZL6DVs/3P58k9nk8/jZeQCurTJylQA8qFYzHFfhBJkuqyE0FifOsQ0uKWekiZ5g8wtr28cw==}
+
+  punycode.js@2.3.1:
+    resolution: {integrity: sha512-uxFIHU0YlHYhDQtV4R9J6a52SLx28BCjT+4ieh7IGbgwVJWO+km431c4yRlREUAsAmt/uMjQUyQHNEPf0M39CA==}
+    engines: {node: '>=6'}
 
   qs@6.13.0:
     resolution: {integrity: sha512-+38qI9SOr8tfZ4QmJNplMUxqjbe7LKvvZgWdExBOmd+egZTtjLB67Gu0HRX3u/XOq7UU2Nx6nsjvS16Z9uwfpg==}
@@ -4163,6 +4198,9 @@ packages:
     engines: {node: '>=4.2.0'}
     hasBin: true
 
+  uc.micro@2.1.0:
+    resolution: {integrity: sha512-ARDJmphmdvUk6Glw7y9DQ2bFkKBHwQHLi2lsaH6PPmz/Ka9sFOBsBluozhDltWmnv9u/cF6Rt87znRTPV+yp/A==}
+
   ufo@1.5.4:
     resolution: {integrity: sha512-UsUk3byDzKd04EyoZ7U4DOlxQaD14JUKQl6/P7wiX4FNvUfm3XL246n9W5AmqwW5RSFJ27NAuM0iLscAOYUiGQ==}
 
@@ -4335,6 +4373,15 @@ packages:
 
   vitepress-markdown-timeline@1.2.2:
     resolution: {integrity: sha512-eDFcvudmTW33pI7XdT+ZeUPvpc4CPXI0LZbsZZ54j36G56AN6qYEBiwZpDHl77E4QvqAIJMc8phXXvm7P/Lc+Q==}
+
+  vitepress-plugin-group-icons@1.3.7:
+    resolution: {integrity: sha512-2pS7KATeAPXTVOiXF0cU9Jh8TiMWuLn7uzQr1RkYG8fmILvUfue60w2WtloOfrAenByzYSQ724A4aQzUCgVfqw==}
+
+  vitepress-plugin-tabs@0.6.0:
+    resolution: {integrity: sha512-35mQUbI6lcVrLj0PpwautXm8LiV6Gz5ZDlklVRf/0KDd6gGs8HaZztqOxdffnzCiKIFLURBx930xq28it9jQTg==}
+    peerDependencies:
+      vitepress: ^1.0.0
+      vue: ^3.3.8
 
   vitepress@1.6.3:
     resolution: {integrity: sha512-fCkfdOk8yRZT8GD9BFqusW3+GggWYZ/rYncOfmgcDtP3ualNHCAg+Robxp2/6xfH1WwPHtGpPwv7mbA3qomtBw==}
@@ -5592,7 +5639,15 @@ snapshots:
     dependencies:
       '@hapi/hoek': 9.3.0
 
+  '@iconify-json/logos@1.2.4':
+    dependencies:
+      '@iconify/types': 2.0.0
+
   '@iconify-json/simple-icons@1.2.28':
+    dependencies:
+      '@iconify/types': 2.0.0
+
+  '@iconify-json/vscode-icons@1.2.16':
     dependencies:
       '@iconify/types': 2.0.0
 
@@ -7846,6 +7901,10 @@ snapshots:
 
   lines-and-columns@1.2.4: {}
 
+  linkify-it@5.0.0:
+    dependencies:
+      uc.micro: 2.1.0
+
   local-pkg@1.1.1:
     dependencies:
       mlly: 1.7.4
@@ -7931,6 +7990,17 @@ snapshots:
 
   mark.js@8.11.1: {}
 
+  markdown-it-task-checkbox@1.0.6: {}
+
+  markdown-it@14.1.0:
+    dependencies:
+      argparse: 2.0.1
+      entities: 4.5.0
+      linkify-it: 5.0.0
+      mdurl: 2.0.0
+      punycode.js: 2.3.1
+      uc.micro: 2.1.0
+
   math-intrinsics@1.1.0: {}
 
   mdast-util-to-hast@13.2.0:
@@ -7946,6 +8016,8 @@ snapshots:
       vfile: 6.0.3
 
   mdn-data@2.12.2: {}
+
+  mdurl@2.0.0: {}
 
   media-typer@0.3.0: {}
 
@@ -8368,6 +8440,8 @@ snapshots:
     dependencies:
       end-of-stream: 1.4.4
       once: 1.4.0
+
+  punycode.js@2.3.1: {}
 
   qs@6.13.0:
     dependencies:
@@ -9051,6 +9125,8 @@ snapshots:
 
   typescript@4.5.5: {}
 
+  uc.micro@2.1.0: {}
+
   ufo@1.5.4: {}
 
   unbzip2-stream@1.4.3:
@@ -9215,6 +9291,19 @@ snapshots:
   vitepress-markdown-timeline@1.2.2:
     dependencies:
       dayjs: 1.11.13
+
+  vitepress-plugin-group-icons@1.3.7:
+    dependencies:
+      '@iconify-json/logos': 1.2.4
+      '@iconify-json/vscode-icons': 1.2.16
+      '@iconify/utils': 2.3.0
+    transitivePeerDependencies:
+      - supports-color
+
+  vitepress-plugin-tabs@0.6.0(vitepress@1.6.3(@algolia/client-search@5.21.0)(@types/node@22.13.10)(async-validator@4.2.5)(postcss@8.5.3)(sass-embedded@1.85.1)(sass@1.85.1)(search-insights@2.17.3)(typescript@4.5.5))(vue@3.5.13(typescript@4.5.5)):
+    dependencies:
+      vitepress: 1.6.3(@algolia/client-search@5.21.0)(@types/node@22.13.10)(async-validator@4.2.5)(postcss@8.5.3)(sass-embedded@1.85.1)(sass@1.85.1)(search-insights@2.17.3)(typescript@4.5.5)
+      vue: 3.5.13(typescript@4.5.5)
 
   vitepress@1.6.3(@algolia/client-search@5.21.0)(@types/node@22.13.10)(async-validator@4.2.5)(postcss@8.5.3)(sass-embedded@1.85.1)(sass@1.85.1)(search-insights@2.17.3)(typescript@4.5.5):
     dependencies:

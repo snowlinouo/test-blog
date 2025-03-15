@@ -1,5 +1,8 @@
 import timeline from 'vitepress-markdown-timeline'
+import taskCheckbox from 'markdown-it-task-checkbox'
 import { type MarkdownOptions } from 'vitepress'
+import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs'
+import { groupIconMdPlugin } from 'vitepress-plugin-group-icons'
 
 export const markdown: MarkdownOptions = {
   container: {
@@ -11,5 +14,15 @@ export const markdown: MarkdownOptions = {
   },
   config: (md) => {
     md.use(timeline)
+    md.use(tabsMarkdownPlugin)
+    md.use(groupIconMdPlugin)
+    md.use(taskCheckbox, {
+      disabled: false,
+      divWrap: false,
+      divClass: 'checkbox',
+      idPrefix: 'cbx_',
+      ulClass: 'task-list',
+      liClass: 'task-list-item'
+    })
   }
 } 

@@ -3,11 +3,32 @@
  * -------------------------------------------------------------------------- */
 
  :root {
-  --vp-c-indigo-1: #60bf90;
-  --vp-c-indigo-2: #3aa374;
-  --vp-c-indigo-3: #008858;
+  --vp-c-default-1: var(--vp-c-gray-1);
+  --vp-c-default-2: var(--vp-c-gray-2);
+  --vp-c-default-3: var(--vp-c-gray-3);
+  --vp-c-default-soft: var(--vp-c-gray-soft);
+
+  --vp-c-brand-1: var(--vp-c-green-1);
+  --vp-c-brand-2: var(--vp-c-green-2);
+  --vp-c-brand-3: var(--vp-c-green-3);
+  --vp-c-brand-soft: var(--vp-c-green-soft);
+
+  --vp-c-tip-1: var(--vp-c-brand-1);
+  --vp-c-tip-2: var(--vp-c-brand-2);
+  --vp-c-tip-3: var(--vp-c-brand-3);
+  --vp-c-tip-soft: var(--vp-c-brand-soft);
+
+  --vp-c-warning-1: var(--vp-c-yellow-1);
+  --vp-c-warning-2: var(--vp-c-yellow-2);
+  --vp-c-warning-3: var(--vp-c-yellow-3);
+  --vp-c-warning-soft: var(--vp-c-yellow-soft);
+
+  --vp-c-danger-1: var(--vp-c-red-1);
+  --vp-c-danger-2: var(--vp-c-red-2);
+  --vp-c-danger-3: var(--vp-c-red-3);
+  --vp-c-danger-soft: var(--vp-c-red-soft);
+
   --vp-c-accent: #35495e;
-  --vp-c-brand: #44bd87;
   --vp-c-text-code: #476582;
 
   --vp-code-block-bg: rgba(125, 125, 125, 0.04);
@@ -74,17 +95,17 @@
  * Component: Button
  * -------------------------------------------------------------------------- */
 
-:root {
-  --vp-button-brand-border: var(--vp-c-brand-light);
-  --vp-button-brand-text: rgba(255, 255, 245, 0.86);
-  --vp-button-brand-bg: var(--vp-c-brand);
-  --vp-button-brand-hover-border: var(--vp-c-brand-light);
-  --vp-button-brand-hover-text: var(--vp-c-white);
-  --vp-button-brand-hover-bg: var(--vp-c-brand-light);
-  --vp-button-brand-active-border: var(--vp-c-brand-light);
-  --vp-button-brand-active-text: var(--vp-c-white);
-  --vp-button-brand-active-bg: var(--vp-button-brand-bg);
-}
+/*:root {
+/*  --vp-button-brand-border: var(--vp-c-brand-light);
+/*  --vp-button-brand-text: rgba(255, 255, 245, 0.86);
+/*  --vp-button-brand-bg: var(--vp-c-brand);
+/*  --vp-button-brand-hover-border: var(--vp-c-brand-light);
+/*  --vp-button-brand-hover-text: var(--vp-c-white);
+/*  --vp-button-brand-hover-bg: var(--vp-c-brand-light);
+/*  --vp-button-brand-active-border: var(--vp-c-brand-light);
+/*  --vp-button-brand-active-text: var(--vp-c-white);
+/*  --vp-button-brand-active-bg: var(--vp-button-brand-bg);
+/*}
 
 /**
  * Component: Home

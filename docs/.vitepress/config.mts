@@ -1,6 +1,8 @@
 import { defineConfig } from 'vitepress'
 import Unocss from 'unocss/vite'
 
+import { groupIconVitePlugin } from 'vitepress-plugin-group-icons'
+
 import { nav, sidebar, markdown } from './configs'
 
 // https://vitepress.dev/reference/site-config
@@ -30,6 +32,7 @@ export default defineConfig({
     vite: {
       plugins: [
         Unocss(),
+        groupIconVitePlugin(),
       ]
     },
     themeConfig: {

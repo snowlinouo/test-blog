@@ -3,6 +3,8 @@ import { h } from 'vue'
 import type { Theme } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 import MyLayout from './components/MyLayout.vue'
+import 'virtual:group-icons.css'
+import { enhanceAppWithTabs } from 'vitepress-plugin-tabs/client'
 
 import mediumZoom from 'medium-zoom';
 import { onMounted, watch, nextTick } from 'vue';
@@ -14,7 +16,6 @@ import './style/index.css'
 import './style/animation.css'
 import './style/ui.css'
 
-// 引入时间线样式
 import "vitepress-markdown-timeline/dist/theme/index.css"
 
 export default {
@@ -37,6 +38,7 @@ export default {
 
   Layout: MyLayout,
   enhanceApp({ app, router, siteData }) {
-    // ...
+    // 注册 tabs 组件
+    enhanceAppWithTabs(app)
   }
 } satisfies Theme
