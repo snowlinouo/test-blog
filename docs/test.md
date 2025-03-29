@@ -22,19 +22,6 @@ article: false
 * [ ] 真不戳
 * [x] 内置任务列表
 
-
-:::=tabs
-::tab1
-一些内容
-
-一些内容
-
-一些内容
-
-::tab2
-一些内容 。。。
-:::
-
 ::: code-group
 
 ```sh [npm]
