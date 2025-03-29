@@ -30,9 +30,5 @@ export const nav: DefaultTheme.Config['nav'] = [
         link: '/sky/known-issues',
       },
     ],
-  },
-  {
-    text: '關於作者',
-    link: '/about.md'
   }
 ]

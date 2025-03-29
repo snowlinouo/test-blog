@@ -1,0 +1,56 @@
+{
+  "name": "vitepress-plugin-sidebar-resolve",
+  "type": "module",
+  "version": "1.0.5",
+  "description": "扫描 markdown 文档，自动生成侧边栏",
+  "author": {
+    "name": "teeker",
+    "email": "2456019588@qq.com",
+    "url": "https://tianke99.cn"
+  },
+  "keywords": [
+    "vitepress",
+    "vite",
+    "plugin",
+    "sidebar"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/Kele-Bingtang/vitepress-theme-teek/tree/master/plugins/vitepress-plugin-catalogue",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kele-Bingtang/vitepress-theme-teek.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Kele-Bingtang/vitepress-theme-teek/issues"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "scripts": {
+    "stub": "unbuild --stub",
+    "build": "unbuild"
+  },
+  "dependencies": {
+    "gray-matter": "^4.0.3",
+    "picocolors": "^1.1.1"
+  },
+  "devDependencies": {
+    "unbuild": "^3.2.0",
+    "vite": "^6.0.7",
+    "vitepress": "^1.6.3"
+  },
+  "peerDependencies": {
+    "vite": "^6.0.7",
+    "vitepress": "^1.6.3"
+  }
+}
