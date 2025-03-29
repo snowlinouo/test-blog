@@ -5,7 +5,7 @@
   },
   "dependencies": {
     "vitepress-markdown-timeline": "^1.2.2",
-    "vitepress-theme-teek": "1.0.0-alpha.0"
+    "vitepress-theme-teek": "1.0.0-alpha.1"
   },
   "scripts": {
     "docs:dev": "vitepress dev docs",
