@@ -29,6 +29,32 @@ const teekConfig = defineTeekConfig({
   },
   themeSetting: {
     themeSize: "large",
+    themeStyleLabel: {
+      vpLabel: "VP 主題",
+      vpTip: "VitePress 主題",
+      default: "預設",
+      vpGreen: "綠色",
+      vpYellow: "黃色",
+      vpRed: "紅色",
+      epLabel: "EP 主題",
+      epTip: "Element Plus 主題",
+      epBlue: "藍色",
+      epGreen: "綠色",
+      epYellow: "黃色",
+      epRed: "紅色",
+    },
+    themeSizeLabel: {
+      wide: "寬",
+      large: "長",
+      default: "預設",
+      small: "小",
+    },
+    titleTip: {
+      backTop: "回到頂部",
+      toComment: "前往評論",
+      themeSize: "主題尺寸",
+      themeStyle: "主題樣式",
+    },
   },
   banner: {
     enabled: true,
@@ -61,6 +87,16 @@ const teekConfig = defineTeekConfig({
     showUpdateDate: false, // 是否展示更新日期，僅在文章頁顯示
     showCategory: true, // 是否展示分類
     showTag: true, // 是否展示標籤
+    titleTip: {
+      author: "作者",
+      createTime: "創建時間",
+      updateTime: "更新時間",
+      category: "分類",
+      tag: "標籤",
+      wordCount: "文章字數",
+      readingTime: "預計閱讀時間",
+      pageView: "瀏覽量",
+    },
   },
   post: {
     excerptPosition: "top", // 文章摘要位置
