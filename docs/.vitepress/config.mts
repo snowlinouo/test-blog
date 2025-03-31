@@ -1,16 +1,16 @@
 import { defineConfig } from "vitepress";
-import tkThemeConfig from "vitepress-theme-teek/config";
-import timeline from "vitepress-markdown-timeline"; // 导入时间线插件
+import { defineTeekConfig } from "vitepress-theme-teek/config";
+import timeline from "vitepress-markdown-timeline"; // 導入時間線插件
 
 import { nav } from './configs'
 import { sidebar } from './configs'
 
-const description = ["vitepress-theme-teek 使用文档", "vitepress 主题框架"].toString();
+const description = ["vitepress-theme-teek 使用文件", "vitepress 主題框架"].toString();
 
-const tkConfig = tkThemeConfig({
+const teekConfig = defineTeekConfig({
   author: { name: "雪鈴", link: "https://github.com/snowlinouo" },
   blogger: {
-    // 博主信息，显示在首页侧边栏
+    // 部落客資訊，顯示在首頁側邊欄
     avatar: "/logo.png",
     avatarStyle: "radius",
     name: "雪鈴",
@@ -18,9 +18,9 @@ const tkConfig = tkThemeConfig({
   },
   footerInfo: {
     theme: {
-      show: false, // 是否显示主题版权，建议显示
-      name: "", // 自定义名称
-      link: "", // 自定义链接
+      show: false, // 是否顯示主題版權，建議顯示
+      name: "", // 自訂名稱
+      link: "", // 自訂連結
     },
     copyright: {
       createYear: 2024,
@@ -32,32 +32,42 @@ const tkConfig = tkThemeConfig({
   },
   banner: {
     enabled: true,
-    bgStyle: "partImg", // Banner 背景风格：pure 为纯色背景，partImg 为局部图片背景，fullImg 为全屏图片背景
-    pureBgColor: "#28282d", // Banner 背景色，bgStyle 为 pure 时生效
-    imgSrc: ["/bg1.jpg"], // Banner 图片链接。bgStyle 为 partImg 或 fullImg 时生效
-    imgInterval: 15000, // 当多张图片时（imgSrc 为数组），设置切换时间，单位：毫秒
-    imgShuffle: false, // 图片是否随机切换，为 false 时按顺序切换，bgStyle 为 partImg 或 fullImg 时生效
-    imgWaves: true, // 是否开启 Banner 图片波浪纹，bgStyle 为 fullImg 时生效
-    mask: true, // Banner 图片遮罩，bgStyle 为 partImg 或 fullImg 时生效
-    maskBg: "rgba(0, 0, 0, 0.4)", // Banner 遮罩颜色，如果为数字，则是 rgba(0, 0, 0, ${maskBg})，如果为字符串，则作为背景色。bgStyle 为 partImg 或 fullImg 且 mask 为 true 时生效
-    textColor: "#ffffff", // Banner 字体颜色，bgStyle 为 pure 时为 '#000000'，其他为 '#ffffff'
-    titleFontSize: "3.2rem", // 标题字体大小
-    descFontSize: "1.4rem", // 描述字体大小
-    descStyle: "default", // 描述信息风格：default 为纯文字渲染风格（如果 description 为数组，则取第一个），types 为文字打印风格，switch 为文字切换风格
-    description: ["一個溫暖的地方"], // 描述信息
-    switchTime: 4000, // 描述信息切换间隔时间，单位：毫秒。descStyle 为 switch 时生效
-    switchShuffle: false, // 描述信息是否随机切换，为 false 时按顺序切换。descStyle 为 switch 时生效
-    typesInTime: 200, // 输出一个文字的时间，单位：毫秒。descStyle 为 types 时生效
-    typesOutTime: 100, // 删除一个文字的时间，单位：毫秒。descStyle 为 types 时生效
-    typesNextTime: 800, // 打字与删字的间隔时间，单位：毫秒。descStyle 为 types 时生效
-    typesShuffle: false, // 描述信息是否随机打字，为 false 时按顺序打字，descStyle 为 types 时生效
+    bgStyle: "partImg", // Banner 背景風格：pure 為純色背景，partImg 為局部圖片背景，fullImg 為全螢幕圖片背景
+    pureBgColor: "#28282d", // Banner 背景色，bgStyle 為 pure 時生效
+    imgSrc: ["/bg1.jpg"], // Banner 圖片連結。bgStyle 為 partImg 或 fullImg 時生效
+    imgInterval: 15000, // 當多張圖片時（imgSrc 為數組），設置切換時間，單位：毫秒
+    imgShuffle: false, // 圖片是否隨機切換，為 false 時按順序切換，bgStyle 為 partImg 或 fullImg 時生效
+    imgWaves: true, // 是否開啟 Banner 圖片波浪紋，bgStyle 為 fullImg 時生效
+    mask: true, // Banner 圖片遮罩，bgStyle 為 partImg 或 fullImg 時生效
+    maskBg: "rgba(0, 0, 0, 0.4)", // Banner 遮罩顏色，如果為數字，則是 rgba(0, 0, 0, ${maskBg})，如果為字串，則作為背景色。bgStyle 為 partImg 或 fullImg 且 mask 為 true 時生效
+    textColor: "#ffffff", // Banner 字體顏色，bgStyle 為 pure 時為 '#000000'，其他為 '#ffffff'
+    titleFontSize: "3.2rem", // 標題字體大小
+    descFontSize: "1.4rem", // 描述字體大小
+    descStyle: "default", // 描述資訊風格：default 為純文字渲染風格（如果 description 為數組，則取第一個），types 為文字列印風格，switch 為文字切換風格
+    description: ["一個溫暖的地方"], // 描述資訊
+    switchTime: 4000, // 描述資訊切換間隔時間，單位：毫秒。descStyle 為 switch 時生效
+    switchShuffle: false, // 描述資訊是否隨機切換，為 false 時按順序切換。descStyle 為 switch 時生效
+    typesInTime: 200, // 輸出一個文字的時間，單位：毫秒。descStyle 為 types 時生效
+    typesOutTime: 100, // 刪除一個文字的時間，單位：毫秒。descStyle 為 types 時生效
+    typesNextTime: 800, // 打字與刪字的間隔時間，單位：毫秒。descStyle 為 types 時生效
+    typesShuffle: false, // 描述資訊是否隨機打字，為 false 時按順序打字，descStyle 為 types 時生效
+  },
+  article: {
+    showIcon: true, // 作者、日期、分類、標籤、字數、閱讀時長、瀏覽量等文章資訊的圖示是否顯示
+    dateFormat: "yyyy-MM-dd", // 文章日期格式，首頁和文章頁解析日期時使用
+    showInfo: true, // 是否展示作者、日期、分類、標籤、字數、閱讀時長、瀏覽量等文章資訊，分別作用於首頁和文章頁
+    showAuthor: true, // 是否展示作者
+    showCreateDate: true, // 是否展示創建日期
+    showUpdateDate: false, // 是否展示更新日期，僅在文章頁顯示
+    showCategory: true, // 是否展示分類
+    showTag: true, // 是否展示標籤
   },
   post: {
     excerptPosition: "top", // 文章摘要位置
-    showMore: false, // 是否显示更多按钮
-    moreLabel: "阅读全文 >", // 更多按钮文字
-    coverImgMode: "default", // 文章封面图模式
-    showCapture: false, // 是否在摘要位置显示文章部分文字，当为 true 且不使用 frontmatter.describe 和 <!-- more --> 时，会自动截取前 400 个字符作为摘要
+    showMore: false, // 是否顯示更多按鈕
+    moreLabel: "閱讀全文 >", // 更多按鈕文字
+    coverImgMode: "default", // 文章封面圖模式
+    showCapture: false, // 是否在摘要位置顯示文章部分文字，當為 true 且不使用 frontmatter.describe 和 <!-- more --> 時，會自動截取前 400 個字元作為摘要
   },
   vitePlugins: {
     sidebarOption: {
@@ -65,13 +75,13 @@ const tkConfig = tkThemeConfig({
     },
   },
   markdownPlugins: [
-    (md: any) => md.use(timeline), //时间线插件
+    (md: any) => md.use(timeline), //時間線插件
   ],
 });
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  extends: tkConfig,
+  extends: teekConfig,
   base: "/",
   title: "SnowLin Blog",
   description: description,
@@ -104,35 +114,35 @@ export default defineConfig({
     ["meta", { name: "keywords", description }],
   ],
   markdown: {
-    // 开启行号
+    // 開啟行號
     lineNumbers: true,
     image: {
-      // 默认禁用；设置为 true 可为所有图片启用懒加载。
+      // 預設禁用；設置為 true 可為所有圖片啟用懶載入。
       lazyLoading: true,
     },
-    // 更改容器默认值标题
+    // 更改容器預設值標題
     container: {
       tipLabel: "提示",
       warningLabel: "警告",
-      dangerLabel: "危险",
-      infoLabel: "信息",
-      detailsLabel: "详细信息",
+      dangerLabel: "危險",
+      infoLabel: "訊息",
+      detailsLabel: "詳細訊息",
     },
   },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: "/logo.png",
-    darkModeSwitchLabel: "主题",
-    sidebarMenuLabel: "菜单",
-    returnToTopLabel: "返回顶部",
-    lastUpdatedText: "上次更新时间",
+    darkModeSwitchLabel: "主題",
+    sidebarMenuLabel: "選單",
+    returnToTopLabel: "返回頂部",
+    lastUpdatedText: "上次更新時間",
     outline: {
       level: [2, 4],
-      label: "本页导航",
+      label: "本頁導航",
     },
     docFooter: {
-      prev: "上一页",
-      next: "下一页",
+      prev: "上一頁",
+      next: "下一頁",
     },
     nav,
     sidebar,
@@ -159,7 +169,7 @@ export default defineConfig({
       provider: "local",
     },
     editLink: {
-      text: "在 GitHub 上编辑此页",
+      text: "在 GitHub 上編輯此頁",
       pattern: "https://github.com/Kele-Bingtang/vitepress-theme-teek/edit/master/hd-security-docs/docs/:path",
     },
   },

@@ -1,11 +1,13 @@
 ---
 title: Masa 模組中文材質包
 description: 專門為 Masa 系列模組做的模組中文漢化資源包
-tag:
- - Minecraft
-recommend: 2
-hiddenCover: true 
-cover: url
+permalink: /masa-mod/masa-mod-translationpack
+categories:
+  - Minecraft
+tags:
+  - Minecraft
+top: true
+sticky: 1
 ---
 # Masa 模組中文材質包
 
@@ -14,7 +16,7 @@ cover: url
 ```yaml
 - name: Modrinth
   desc: 在 Modrinth 中下載 Masa 模組中文漢化資源包
-  link: https://modrinth.com/resourcepack/masa-family-bucket-translationpack
+  link: https://modrinth.com/resourcepack/masa-mod-translationpack
   img: /modrinth.svg
   badge: 資源包
   badgeType: tip

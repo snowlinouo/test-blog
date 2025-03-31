@@ -14,8 +14,8 @@ import "vitepress-theme-teek/vp-plus/blockquote.scss";
 import "vitepress-theme-teek/vp-plus/index-rainbow.scss";
 import "vitepress-markdown-timeline/dist/theme/index.css"; // 引入时间线样式
 
-//import "./styles/style.scss";
-import "./styles/code-bg.scss";
+// import "./styles/style.scss";
+// import "./styles/code-bg.scss";
 import "./styles/text-color.css"
 import "./styles/text-markdown-color.css"
 
