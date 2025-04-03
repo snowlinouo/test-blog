@@ -2,7 +2,7 @@
   "devDependencies": {
     "sass-embedded": "^1.86.0",
     "vitepress": "^1.6.3",
-    "vitepress-theme-teek": "1.0.0-alpha.3"
+    "vitepress-theme-teek": "1.0.0-alpha.5"
   },
   "dependencies": {
     "vitepress-markdown-timeline": "^1.2.2"

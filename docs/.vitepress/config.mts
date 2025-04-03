@@ -16,6 +16,25 @@ const teekConfig = defineTeekConfig({
     name: "雪鈴",
     slogan: "喵喵(?",
   },
+  topArticle: {
+  },
+  category: {
+    pageTitle: "全部分類",
+    homeTitle: "文章分類",
+    emptyLabel: "暫無文章分類",
+  },
+  tag: {
+  },
+  friendLink: {
+    enabled: true, // 是否启用友情链接卡片
+    list: [
+    ], // 友情链接数据列表
+    limit: 5, // 一页显示的数量
+    autoScroll: false, // 是否自动滚动
+    scrollSpeed: 2500, // 滚动间隔时间，单位：毫秒。autoScroll 为 true 时生效
+    autoPage: false, // 是否自动翻页
+    pageSpeed: 4000, // 翻页间隔时间，单位：毫秒。autoPage 为 true 时生效
+  },
   footerInfo: {
     theme: {
       show: false, // 是否顯示主題版權，建議顯示
@@ -104,6 +123,12 @@ const teekConfig = defineTeekConfig({
     moreLabel: "閱讀全文 >", // 更多按鈕文字
     coverImgMode: "default", // 文章封面圖模式
     showCapture: false, // 是否在摘要位置顯示文章部分文字，當為 true 且不使用 frontmatter.describe 和 <!-- more --> 時，會自動截取前 400 個字元作為摘要
+  },
+  breadcrumb: {
+    enabled: true, // 是否启用面包屑
+    showCurrentName: false, // 面包屑最后一列是否显示当前文章的文件名
+    separator: "/", // 面包屑分隔符
+    homeLabel: "首頁",
   },
   vitePlugins: {
     sidebarOption: {
